@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://www.example.org/index.html">
+    <dc:Owner>
+        <rdf:Description rdf:about="John Smith">
+            <dc:Phone>3875507</dc:Phone>
+        </rdf:Description>
+    </dc:Owner> 
+  </rdf:Description>
+</rdf:RDF>
