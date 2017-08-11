@@ -1,0 +1,18 @@
+Test Results for createAttachment.cgi:
+
+- test1: correct
+
+bug_id: 1077198
+filename: test
+desc: test attachment
+status: success
+database matches
+
+- test2: incorrect bug_id
+
+bug_id: 2000000
+filename: test2
+desc: test2 attachment
+status: failed
+
+- verified working

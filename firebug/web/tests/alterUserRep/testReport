@@ -1,0 +1,23 @@
+Test Results for alterUserRep.cgi:
+
+- test1: upvote
+
+userid: 1016
+votes: 1
+status: success
+database matches
+
+- test2: downvote
+
+userid: 1016
+votes: -1
+status: success
+database matches
+
+- test3: non-existant user
+
+userid: 2000
+votes: 1
+status: failed
+
+- verified working

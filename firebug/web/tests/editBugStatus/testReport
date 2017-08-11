@@ -1,0 +1,33 @@
+Test Results for editBugStatus.cgi:
+
+- test1: correct
+
+bug_id: 1077198
+bug_status: RESOLVED
+status: success
+database matches
+
+- test2: incorrect bug_id
+
+bug_id: 2000000
+bug_status: RESOLVED
+status: failed
+
+- verified working
+
+------SCRIPT UPDATED------
+
+- test3: correct
+
+bug_id: 1075812
+bug_status: RESOLVED
+status: success
+database matches
+
+- test4: incorrect bug_id
+
+bug_id: 2000000
+bug_status: RESOLVED
+status: failed
+
+- verified working

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebug | editBugStatus</title>
+	<!-- Normalise CSS CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+		
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			
+	<!-- Local CSS -->
+	<link rel="stylesheet" href="../style.css">
+		
+	<!-- jQuery CDN -->
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+	<!-- Bootstrap JavaScript CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Local JS -->
+	<!--<script src="../js/global.js"></script>-->
+
+	<!-- Lovely mobile sizing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="login-box">
+			<div class="login-header">This page allows the user to change the status flag of a bug report.</div>
+			<div class="login-content">
+				<form action="../../cgi-bin/editBugStatus.cgi" method="POST" id="createBug-form">
+					<input type="text" required name="id" placeholder="Bug ID you wish to update">
+					<select required name="bug_status" class="form-control">
+						<option value="" disabled selected>Select Flag Status</option>
+						<option value="RESOLVED">RESOLVED</option>
+						<option value="VERIFIED">VERIFIED</option>
+					</select>
+					<button type="submit" id="register-button" class="btn btn-default">Edit status</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

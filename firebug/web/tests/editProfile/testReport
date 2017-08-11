@@ -1,0 +1,30 @@
+Test Results for editProfile.cgi:
+
+- test1: correct
+
+id: 1015
+e-mail: test@test.com
+displayname: test displayname
+isReporter: 0
+isReviewer: 0
+isTriager: 1
+isDeveloper: 0
+isAdmin: 0
+active: 1
+status: success
+database matches
+
+- test2: incorrect id
+
+id: 2000
+e-mail: test@test.com
+displayname: test displayname
+isReporter: 0
+isReviewer: 0
+isTriager: 1
+isDeveloper: 0
+isAdmin: 0
+active: 1
+status: failed
+
+- verified working

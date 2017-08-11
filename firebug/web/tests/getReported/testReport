@@ -1,0 +1,42 @@
+Test Results for getReported.cgi:
+
+- test1: correct
+
+n: 2
+status: found
+output:
+	bug_id: 839627
+	creation_ts: 2013-02-08 13:00:44
+	short_desc: Update pdf.js to version 0.7.210
+	classification: Client Software
+	product: Firefox
+	component: PDF Viewer
+	version: Trunk
+	op_sys: All
+	bug_status: RESOLVED
+	resolution: FIXED 
+	bug_severity: normal
+	votes: 1
+	reporter: ydelendik
+	assigned_to: ryanvm
+
+	bug_id: 904346
+	creation_ts: 2013-08-12 20:24:44
+	short_desc: [meta] add built-in SWF support to Firefox with Shumway
+	classification: Client Software
+	product: Firefox
+	component: Shumway
+	version: Trunk
+	op_sys: All
+	bug_status: RESOLVED
+	resolution: FIXED 
+	bug_severity: normal
+	votes: 13
+	reporter: ydelendik
+	assigned_to: ydelendik
+
+- test2: user with no reports
+status: not found
+output: You haven't created any reports 
+
+- verified working

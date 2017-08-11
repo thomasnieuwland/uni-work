@@ -1,0 +1,14 @@
+Test Results for deleteComment.cgi:
+
+- test1: correct
+
+commentid: 9399835
+status: success
+database matches
+
+- test2: incorrect commentid
+
+commentid: 9999999
+status: failed
+
+- verified working

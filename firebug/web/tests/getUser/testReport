@@ -1,0 +1,25 @@
+Test Results for getUser.cgi:
+
+- test1: correct
+
+id: 1016
+status: found
+output:
+	active: 1
+	displayname: retired
+	email: unspecified
+	id: 1016
+	isAdmin: 0
+	isDeveloper: 0
+	isReporter: 1
+	isReviewer: 0
+	isTriager: 0
+	reputation: 0.0
+	username: tobbi.bugs
+
+- test2: non-existing user id
+
+id: 2000
+status: not found
+
+- verified working

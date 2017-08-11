@@ -1,0 +1,38 @@
+Test Results for getLatestNBugs.cgi:
+
+- test1: correct
+
+n: 2
+status: found
+output:
+	assigned_to: ydelendik
+	bug_id: 1077198
+	bug_severity: normal
+	bug_status: RESOLVED
+	classification: Client Software
+	component: Shumway
+	creation_ts: 2014-10-02 17:12:31
+	op_sys: Mac OS X
+	product: Firefox
+	reporter: ydelendik
+	resolution: FIXED
+	short_desc: Update Shumway to version 0.9.2970
+	version: unspecified
+	votes: 0
+
+	assigned_to: dolske
+	bug_id: 1076943
+	bug_severity: normal
+	bug_status: RESOLVED
+	classification: Client Software
+	component: General
+	creation_ts: 2014-10-02 09:16:17
+	op_sys: All
+	product: Firefox
+	reporter: gavin.sharp
+	resolution: FIXED
+	short_desc: forget icon has white border (non-transparent background)
+	version: Trunk
+	votes: 0
+
+- verified working

@@ -1,0 +1,22 @@
+Test Results for deleteUser.cgi:
+
+- test1: correct
+
+id: 1016
+status: failed
+reason: error in sql prepared statement
+
+------------------------------------------------
+
+- test2: correct
+
+bug_id: 1016
+status: success
+database matches
+
+- test3: incorrect id
+
+bug_id: 2000
+status: failed
+
+- verified working

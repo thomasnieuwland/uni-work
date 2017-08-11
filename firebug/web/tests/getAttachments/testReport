@@ -1,0 +1,22 @@
+Test Results for getAttachments.cgi:
+
+- test1: correct
+
+bug_id: 1077198
+status: found
+output:
+	attacher: ydelendik
+	attachid: 8499262
+	bug_id: 1077198
+	date: 2014-10-02 17:15:11
+	desc: Update Shumway to version 0.9.2970
+	filename: bug1077198.diff
+	isobsolete: 0
+	type: text/plain
+
+- test2: correct
+
+bug_id: 2000000
+status: not found
+
+- verified working

@@ -1,0 +1,23 @@
+Test Results for alterBugRep.cgi:
+
+- test1: upvote
+
+bug_id: 1077198
+votes: 1
+status: success
+database matches
+
+- test2: downvote
+
+bug_id: 1077198
+votes: -1
+status: success
+database matches
+
+- test3: non-existant bug
+
+bug_id: 2000000
+votes: 1
+status: failed
+
+- verified working

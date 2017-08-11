@@ -1,0 +1,22 @@
+Test Results for deleteBug.cgi:
+
+- test1: correct
+
+bug_id: 1076943
+status: failed
+reason: SQL result set empty
+
+---------------------------------------
+
+- test2: correct
+
+bug_id: 1076943
+status: success
+database matches
+
+- test3: incorrect bug_id
+
+bug_id: 2000000
+status: failed
+
+- verified working

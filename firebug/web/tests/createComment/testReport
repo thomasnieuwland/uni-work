@@ -1,0 +1,16 @@
+Test Results for createComment.cgi:
+
+- test1: correct
+
+bug_id: 1077198
+thetext: test comment
+status: success
+database matches
+
+- test2: incorrect bug_id
+
+bug_id: 2000000
+thetext: test2 comment
+status: failed
+
+- verified working

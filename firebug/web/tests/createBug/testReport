@@ -1,0 +1,29 @@
+Test Results for createBug.cgi:
+
+- test1: correct
+
+desc: test description
+classification: Client Software
+product: FireFox
+component: Tabs
+version: 1.1.1
+op_sys: Windows 10
+bug_severity: minor
+status: failed
+reason: SQL prepared statement issue
+
+---------------------------------------
+
+- test2: correct
+
+desc: test description
+classification: Client Software
+product: FireFox
+component: Tabs
+version: 1.1.1
+op_sys: Windows 10
+bug_severity: minor
+status: success
+database matches
+
+- verified working

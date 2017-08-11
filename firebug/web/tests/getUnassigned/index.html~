@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebug | getUnassigned</title>
+	<!-- Normalise CSS CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+		
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			
+	<!-- Local CSS -->
+	<link rel="stylesheet" href="../style.css">
+		
+	<!-- jQuery CDN -->
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+	<!-- Bootstrap JavaScript CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Local JS -->
+	<script src="../js/global.js"></script>
+
+	<!-- Lovely mobile sizing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="login-box">
+			<div class="login-header">Unassigned bugs</div>
+			<div class="login-content">
+				<form action="../../cgi-bin/getAssigned.cgi" method="POST" id="register-form">
+					<input type="text" name="n" placeholder="Number of results to return">
+					<button type="submit" id="register-button" class="btn btn-default">Get Unassigned Bugs</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

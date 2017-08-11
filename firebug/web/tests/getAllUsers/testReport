@@ -1,0 +1,9 @@
+Test Results for getAllUsers.cgi:
+
+- test1: correct
+
+(no input)
+status: success
+output: all users in database
+
+- verified working

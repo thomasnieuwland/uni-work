@@ -1,0 +1,14 @@
+Test Results for giveReputation.cgi:
+
+- test1: correct
+
+id: 1016
+status: success
+database matches
+
+- test2: non-existing user id
+
+id: 2000
+status: failed
+
+- verified working

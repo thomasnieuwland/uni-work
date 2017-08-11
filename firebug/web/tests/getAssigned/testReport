@@ -1,0 +1,16 @@
+Test Results for getAssigned.cgi:
+(must be logged in to use properly, preferably with assigned bugs)
+
+- test1: correct
+
+n: 5
+status: found
+output (bug_id):
+714712
+738967
+742099
+758291
+842589
+database matches
+
+- verified working

@@ -1,0 +1,23 @@
+
+> sudo <text_editor> /etc/apache2/apache2.conf
+
+In the <Directory /var/www/> bit, add these two lines:
+
+	AddType text/html .htm
+	AddOutputFilter INCLUDES .htm
+
+And at the end of the Options line, add Includes (or +Includes, if everything else on that line has a +/-)
+
+Close text editor
+
+> sudo a2enmod include
+> sudo service apache2 restart
+
+
+// What this means
+
+When making a file that contains includes, it needs extension .htm
+When making a file that is included (e.g. a snippet) it need extension .html
+
+e.g.
+	index.htm include navbarInclude.html and standard-links.html

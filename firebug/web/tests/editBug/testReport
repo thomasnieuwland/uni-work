@@ -1,0 +1,28 @@
+Test Results for editBug.cgi:
+
+- test1: correct
+
+bug_id: 1077198
+short_desc: edit bug
+classification: Server Software
+product: firefox
+component: ui
+version: 1
+op_sys: windows
+bug_severity: major
+status: success
+database matches
+
+- test2: incorrect bug_id
+
+bug_id: 2000000
+short_desc: edit bug
+classification: Server Software
+product: firefox
+component: ui
+version: 1
+op_sys: windows
+bug_severity: major
+status: failed
+
+- verified working

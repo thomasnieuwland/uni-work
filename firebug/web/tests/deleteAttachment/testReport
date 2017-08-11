@@ -1,0 +1,14 @@
+Test Results for deleteAttachment.cgi:
+
+- test1: correct
+
+attachid: 8499380
+status: success
+database matches
+
+- test2: incorrect bug_id
+
+attachid: 9999999
+status: failed
+
+- verified working

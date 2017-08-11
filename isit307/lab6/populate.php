@@ -4,7 +4,7 @@ ini_set('display_errors', '1');
 
 $servername = "localhost";
 $username = "root";
-$password = "tobygo19";
+$password = "";
 $dbname = "lab6";
 
 //Create connection

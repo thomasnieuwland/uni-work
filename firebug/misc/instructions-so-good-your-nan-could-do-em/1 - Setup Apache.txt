@@ -1,0 +1,50 @@
+Before you start this, you should have cloned the repo to somewhere on your machine
+
+1. Install Apache
+	> sudo apt-get install apache2
+
+2. Setup a new Virtual Host for firebug
+	> sudo <text editor> /etc/apache2/sites-available/000-default.conf
+
+	Then copy and paste this snippet, after the existing </VirtualHost> tag, but before the #vim line
+
+	<VirtualHost *:80>
+		ServerName firebug
+		DocumentRoot /var/www/firebug
+		ErrorLog ${APACHE_LOG_DIR}/error.log
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+	</VirtualHost>
+
+	This creates a new virtual host on port 80, named firebug, with the directory starting in /var/www/firebug
+
+3. Add the CGI bits
+	> sudo <text editor> /etc/apache2/apache2.conf
+
+	Copy and paste this snippet anywhere amongst the other <Directory> tags
+
+	ScriptAlias "/cgi-bin/" "/var/www/firebug/cgi-bin/"
+	<Directory /var/www/firebug/cgi-bin>
+		Options +ExecCGI
+		AddHandler cgi-script .cgi
+		Options Indexes FollowSymLinks
+		AllowOverride None
+	</Directory>
+
+	This tells apache that the standard cgi-bin folder is now the firebug one, and switches on cgi execution in that folder
+
+4. Enable the CGI mod
+	> sudo a2enmod cgi
+
+5. Add a host line for easy access
+	> sudo <text editor> /etc/hosts
+
+	Add this line before the IPv6 stuff
+
+	127.0.0.2 	firebug
+
+	This allows you to access the localhost site using 'firebug' (e.g. http://firebug/login) without affecting actual localhost
+
+6. Link the repo
+	> ln -s /where/your/repo/is/firebug/web /var/www/firebug
+
+	This links the repo to the document root of the 'firebug' server, and means the changes are instantly accessible at http://firebug each time you pull

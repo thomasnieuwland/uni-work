@@ -1,0 +1,24 @@
+Test Results for createAttachment.cgi:
+
+- test1: correct
+
+attachid: 8499406
+isobsolete: 1
+ispatch: 1
+filename: test
+type: test type
+size: 420
+status: success
+database matches
+
+- test2: incorrect attachid
+
+attachid: 2000000
+isobsolete: 1
+ispatch: 1
+filename: test
+type: test type
+size: 420
+status: failed
+
+- verified working

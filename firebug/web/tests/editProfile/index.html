@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebug | EditProfile</title>
+	<!-- Normalise CSS CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+		
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			
+	<!-- Local CSS -->
+	<link rel="stylesheet" href="../style.css">
+		
+	<!-- jQuery CDN -->
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+	<!-- Bootstrap JavaScript CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Local JS -->
+	<!--<script src="../js/global.js"></script>-->
+
+	<!-- Lovely mobile sizing -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="login-box">
+			<div class="login-header">This page allows the user to edit the contents of a user profile. Note: only admin accounts and the owner can edit the profile.</div>
+			<div class="login-content">
+				<form action="../../cgi-bin/editProfile.cgi" method="POST" id="editProfile-form">
+					<input type="text" required name="id" placeholder="User ID">
+					<input type="text" required name="email" placeholder="E-mail">
+					<input type="text" required name="displayname" placeholder="Display Name">
+					<input type="text" name="isReporter" placeholder="Is Reporter?">
+					<input type="text" name="isReviewer" placeholder="Is Reviewer?">
+					<input type="text" name="isTriager" placeholder="Is Triager?">
+					<input type="text" name="isDeveloper" placeholder="Is Developer?">
+					<input type="text" name="isAdmin" placeholder="Is Admin?">
+					<input type="text" name="active" placeholder="Active">
+					<button type="submit" id="register-button" class="btn btn-default">Edit Profile</button>
+				</form>
+			</div>
+			<div class="register">
+				<h6>To create a cookie: <a href="../login">Login</a></h6>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

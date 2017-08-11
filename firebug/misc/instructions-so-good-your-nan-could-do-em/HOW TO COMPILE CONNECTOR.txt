@@ -1,0 +1,7 @@
+All CGI scripts need to be compiled on Steppinghat due to dependencies being included properly.
+
+> ssh user@steppinghat.com -p 69
+
+> cd /var/www/firebug
+
+> sudo g++ -Wall -I/usr/include/cppconn -o web/cgi-bin/<OUTPUT FILE NAME> cpp/<INPUT FILE NAME> -L/usr/lib -lmysqlcppconn -lcgicc

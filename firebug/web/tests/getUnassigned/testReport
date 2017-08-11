@@ -1,0 +1,38 @@
+Test Results for getUnassigned.cgi:
+
+- test1: correct
+
+n: 2
+status: found
+output:
+	assigned_to: nobody
+	bug_id: 1075812
+	bug_severity: normal
+	bug_status: RESOLVED
+	classification: Client Software
+	component: Location Bar
+	creation_ts: 2014-10-01 12:01:44
+	op_sys: All
+	product: Firefox
+	reporter: saneyuki.s.snyk
+	resolution: DUPLICATE
+	short_desc: Should show \"Search with \" entry in location drop down list in private browsing window
+	version: Trunk
+	votes: 0
+
+	assigned_to: nobody
+	bug_id: 1066653
+	bug_severity: normal
+	bug_status: RESOLVED
+	classification: Client Software
+	component: Tabbed Browser
+	creation_ts: 2014-09-12 07:48:13
+	op_sys: All
+	product: Firefox
+	reporter: ttaubert
+	resolution: DUPLICATE
+	short_desc: [e10s] Reviving tabs after the content process crashes doesn't work
+	version: Trunk
+	votes: 0
+
+- verified working

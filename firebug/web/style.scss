@@ -1,0 +1,359 @@
+$mainColor: #cc0000;
+
+// Import fonts
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+
+// Global animation curve (for ultimate pretty)
+* {
+	transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1) !important;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	padding-top: 70px;
+	background-color: #f4f4f4;
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+	&.navbar-default {
+		background-color: $mainColor;
+		border: 0;
+		border-radius: 0;
+
+		.navbar-right {
+			padding-right: 0;
+		}
+
+		.navbar-brand {
+			color: white;
+			transition: 150ms;
+
+			&:hover {
+				background-color: darken($mainColor, 10);
+				color: #ffeeee;
+			}
+
+			&:focus {
+				color: #ffeeee;
+			}
+		}
+
+		.navbar-nav > li > a {
+			color: white;
+			transition: 150ms;
+
+			&:hover {
+				background-color: darken($mainColor, 10);
+				color: #ffeeee;
+			}
+
+			&:focus {
+				color: #ffeeee;
+			}
+		}
+
+		.navbar-nav > .open > a:focus {
+			color: white;
+			background-color: darken($mainColor, 10);
+		}
+
+		.navbar-nav > .active > a {
+			color: white;
+			background-color: darken($mainColor, 10);
+
+			&:hover {
+				color: white;
+				margin-top: 0;
+				background-color: darken($mainColor, 10);
+			}
+
+			&:focus {
+				background-color: darken($mainColor, 10);
+			}
+
+		}
+	}
+
+	> div.container-fluid {
+		max-width: 900px;
+	}
+
+	.navbar-form {
+
+		margin-top: 0;
+		margin-bottom: 0;
+
+		button[type=submit], button[type=button], .btn {
+			margin-top: 0;
+			background: transparent;
+			border: 0;
+			border-radius: 0;
+			color: white;
+			padding: 6px 12px 6px 12px;
+
+			&:active {
+				color: white;
+				background: transparent;
+			}
+		}
+
+		input[type=text] {
+			background: transparent;
+			border: 0;
+			border-bottom: 1px solid #eecccc;
+			border-radius: 0;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			color: white;
+			padding: 0;
+
+			transition: 150ms;
+			&:focus {
+				border-bottom: 2px solid white;
+			}
+
+			$placeholderColor: #ffeeee;
+			&::-webkit-input-placeholder {
+				color: $placeholderColor;
+			}
+			&::-moz-placeholder {
+				color: $placeholderColor;
+			}
+			&:-ms-input-placeholder {
+				color: $placeholderColor;
+			}
+			&:-moz-placeholder {
+				color: $placeholderColor;
+			}
+		}
+	}
+}
+
+div {
+
+	&.panel {
+		max-width: 900px;
+		a.panelHeader {
+			height: 100%;
+			display: block;
+			text-decoration: none;
+			color: inherit;
+
+			span {
+				float: right;
+			}
+		}
+
+		.panel-footer {
+			text-align: right;
+			a {
+				padding-top: 5px;
+				padding-bottom: 5px;
+				font-size: 80%;
+				display: inline-block;
+			}
+			border-top: 0;
+			background-color: white;
+		}
+
+		.panel-body.dashboard-panel {
+			padding: {
+				bottom: 0;
+				top: 0;
+			}
+		}
+
+		table {
+			margin-bottom: 0;
+		}
+
+		&.detail-panel {
+			max-width: 350px;
+			width: 45%;
+			min-width: 200px;
+		}
+	}
+
+	&.panel-group {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&.btn-toolbar {
+		max-width: 900px;
+		margin-bottom: 15px;
+
+		& > .btn {
+			margin-left: 0;
+			margin-right: 5px;
+		}
+	}
+
+	&.heading-div {
+		max-width: 900px;
+	}
+}
+
+.search-form-box {
+	max-width: 450px;
+}
+
+table {
+	//table-layout: fixed;
+	word-wrap: break-word;
+	overflow: hidden;
+	tr {
+		max-width: 100%;
+		overflow: hidden;
+	}
+	td {
+		text-overflow: ellipsis;
+	}
+}
+
+.login-box {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15vh;
+	max-width: 500px;
+
+	.login-header {
+		width: 100%;
+		height: 50px;
+		color: white;
+		background-color: $mainColor;
+		padding: 8px 15px;
+		font-size: 18pt;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+
+	.login-content {
+		background: white;
+		padding: 15px;
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+
+		-webkit-box-shadow: 0px 2px 13px -2px rgba(189, 189, 189, 0.73);
+		-moz-box-shadow: 0px 2px 13px -2px rgba(189, 189, 189, 0.73);
+		box-shadow: 0px 2px 13px -2px rgba(189, 189, 189, 0.73);
+	}
+
+	button, input[type=button], input[type=submit], select {
+		width: 100%;
+	}
+
+	.alert {
+		display: none;
+		margin-bottom: 0;
+	}
+
+	.register {
+		text-align: right;
+	}
+}
+
+#details-dropdown {
+	max-width: 900px;
+    h2 {
+	    display: inline-block;
+    }
+	div.dropdown {
+		display: inline;
+		float: right;
+		margin-top: 20px;
+
+		li {
+			display: block;
+		}
+	}
+}
+
+#dev-name {
+	float: left;
+}
+
+form {
+	&:not(.solo-form) {
+		input[type=text], input[type=password], input[type=email], select {
+			border: none;
+			border-bottom: 1px solid #cccccc;
+			margin: 8px 0;
+			height: 30px;
+			width: 100%;
+			transition: border-bottom 80ms;
+
+			&:focus {
+				border-bottom: 2px solid $mainColor;
+			}
+		}
+		button, input[type=button], input[type=submit], select {
+			margin: 8px 0;
+		}
+	}
+
+	select.form-control {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+
+		&:focus {
+			border-color: $mainColor;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			border-radius: 0;
+			outline: none;
+		}
+	}
+
+	.alert {
+		display: none;
+	}
+
+	&>div.input-group {
+		margin-bottom: 5px;
+	}
+}
+
+.btn-file {
+	position: relative;
+	overflow: hidden;
+    input[type=file] {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    min-width: 100%;
+	    min-height: 100%;
+	    font-size: 100px;
+	    text-align: right;
+	    filter: alpha(opacity=0);
+	    opacity: 0;
+	    outline: none;
+	    background: white;
+	    cursor: inherit;
+	    display: block;
+    }
+}
+
+/* Chrome input highlight remove */
+input, select, textarea, button, .btn, .form-control {
+	&:focus, &:active:focus, &.active:focus, &.focus, &:active.focus, &.active.focus {
+		outline: none;
+	}
+
+	outline: none;
+
+}
+
+thead td {
+	font-weight: bold;
+}
+
+.no-vertical-padding {
+	padding: {
+		top: 0;
+		bottom: 0;
+	}
+}

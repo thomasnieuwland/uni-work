@@ -1,0 +1,28 @@
+Test Results for assignBug.cgi:
+
+- test1: correct
+
+userid: 1016
+bug_id: 1077198
+status: success
+database matches
+
+- test2: incorrect userid
+
+userid: 2000
+bug_id: 1077198
+status: failed
+
+- test3: incorrect bug_id
+
+userid: 1016
+bug_id: 2000000
+status: failed
+
+- test4: both incorrect
+
+userid: 2000
+bug_id: 2000000
+status: failed
+
+- verified working

@@ -1,0 +1,23 @@
+Test Results for deleteFollowing.cgi:
+
+- test1: correct
+
+bug_id: 1077198
+status: failed
+reason: no userID found
+
+------------------------------------------------
+(create follow using own login to test)
+
+- test2: correct
+
+bug_id: 1077198
+status: success
+database matches
+
+- test3: incorrect bug_id
+
+bug_id: 2000000
+status: failed
+
+- verified working

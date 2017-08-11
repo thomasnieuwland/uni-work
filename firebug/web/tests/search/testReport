@@ -1,0 +1,48 @@
+Test Results for search.cgi:
+
+- test1: correct
+
+search_term: tab
+n: 2
+status: found
+output:
+	assigned_to: ttaubert
+	bug_id: 817947
+	bug_severity: normal
+	bug_status: VERIFIED
+	classification: Client Software
+	component: Tabbed Browser
+	creation_ts: 2012-12-03 21:52:12
+	op_sys: Windows 7
+	product: Firefox
+	relevance: 3
+	reporter: tabutils+bugzilla
+	resolution: FIXED
+	short_desc: Move a background unloaded tab to New Window fails
+	version: Trunk
+	votes: 0
+
+	assigned_to: gijskruitbosch+bugs
+	bug_id: 874051
+	bug_severity: normal
+	bug_status: RESOLVED
+	classification: Client Software
+	component: Tabbed Browser
+	creation_ts: 2013-05-20 07:23:40
+	op_sys: All
+	product: Firefox
+	relevance: 2
+	reporter: gijskruitbosch+bugs
+	resolution: FIXED
+	short_desc: (Australis) 2 remaining failing tests on UX in accessible/tests/mochitest/tree/test_tabbrowser.xul
+	version: Trunk
+	votes: 0
+
+- test2: no results
+
+search_term: knob
+n: 2
+status: not found
+output: no results found
+
+- verified working
