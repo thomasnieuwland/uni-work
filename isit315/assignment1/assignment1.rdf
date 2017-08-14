@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+    <foaf:Person rdf:about="http://example.org/people/TomNieuwland">
+        <foaf:title>Mr</foaf:title>
+        <foaf:givenName>Thomas</foaf:givenName>
+        <foaf:familyName>Nieuwland</foaf:familyName>
+        <foaf:img rdf:resource="http://i.imgur.com/ybKAM2i.jpg"/>
+        <foaf:age>20</foaf:age>
+        <foaf:based_near>Engadine</foaf:based_near>
+        <foaf:knows><foaf:Person rdf:about="http://example.org/people/CourtneyParsons"/></foaf:knows>
+        <foaf:knows><foaf:Person rdf:about="http://example.org/people/JacksonMills"/></foaf:knows>
+        <foaf:knows><foaf:Person rdf:about="http://example.org/people/TysonHooker"/></foaf:knows>
+    </foaf:Person>
+
+    <foaf:Person rdf:about="http://example.org/people/CourtneyParsons">
+        <foaf:title>Ms</foaf:title>
+        <foaf:givenName>Courtney</foaf:givenName>
+        <foaf:familyName>Parsons</foaf:familyName>
+        <foaf:img rdf:resource="http://i.imgur.com/6u8AxQQ.jpg"/>
+        <foaf:age>21</foaf:age>
+        <foaf:based_near>Engadine</foaf:based_near>
+        <foaf:knows><foaf:Person rdf:about="http://example.org/people/TomNieuwland"/></foaf:knows>
+        <foaf:knows><foaf:Person rdf:about="http://example.org/people/JacksonMills"/></foaf:knows>
+    </foaf:Person>
+
+    <foaf:Person rdf:about="http://example.org/people/TysonHooker">
+        <foaf:title>Mr</foaf:title>
+        <foaf:givenName>Tyson</foaf:givenName>
+        <foaf:familyName>Hooker</foaf:familyName>
+        <foaf:img rdf:resource="http://i.imgur.com/0OBJRXX.jpg"/>
+        <foaf:age>20</foaf:age>
+        <foaf:based_near>Engadine</foaf:based_near>
+        <foaf:knows><foaf:Person rdf:about="http://example.org/people/TomNieuwland"/></foaf:knows>
+    </foaf:Person>
+
+    <foaf:Person rdf:about="http://example.org/people/JacksonMills">
+        <foaf:title>Mr</foaf:title>
+        <foaf:givenName>Jackson</foaf:givenName>
+        <foaf:familyName>Mills</foaf:familyName>
+        <foaf:img rdf:resource="http://i.imgur.com/ybKAM2i.jpg"/>
+        <foaf:img rdf:resource="http://i.imgur.com/B3qkcZl.jpg"/>
+        <foaf:age>21</foaf:age>
+        <foaf:based_near>Engadine</foaf:based_near>
+        <foaf:knows><foaf:Person rdf:about="http://example.org/people/TomNieuwland"/></foaf:knows>
+        <foaf:knows><foaf:Person rdf:about="http://example.org/people/CourtneyParsons"/></foaf:knows>
+    </foaf:Person>  
+</rdf:RDF>
